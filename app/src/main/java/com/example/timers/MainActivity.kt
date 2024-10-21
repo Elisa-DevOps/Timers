@@ -24,5 +24,15 @@ class MainActivity : AppCompatActivity() {
         val stopWatchHours = findViewById<TextView>(R.id.stopW_hours)
         val stopWatchMins = findViewById<TextView>(R.id.stopW_mins)
         val stopWatchSecs = findViewById<TextView>(R.id.stopW_secs)
+
+        val stopWatchButton = findViewById<TextView>(R.id.stopW_start)
+
+        if (stopWatchButton.text == "Start") {
+            stopWatchButton.text = "Stop"
+            stopWatchButton.setBackgroundColor(getColor(R.color.red))
+        } else {
+            stopWatchButton.text = "Start"
+            stopWatchButton.setBackgroundColor(getColor(R.color.brightTeal))
+        }
     }
 }
