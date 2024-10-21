@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Timers</string>
+    <string name="upper_hrs">HOURS</string>
+    <string name="lower_hrs">hrs</string>
+    <string name="upper_mins">MINS</string>
+    <string name="lower_mins">mins</string>
+    <string name="upper_secs">SECS</string>
+    <string name="lower_secs">secs</string>
+    <string name="count_up_logo">Count Up Logo</string>
+    <string name="count_down_logo">Count Down Logo</string>
+</resources>
