@@ -108,12 +108,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:contentDescription="@string/count_up_logo"
         android:layout_width="174dp"
         android:layout_height="83dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="221dp"
+        android:contentDescription="@string/count_up_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -156,16 +156,16 @@
         android:layout_width="79dp"
         android:layout_height="63dp"
         android:layout_marginStart="166dp"
-        android:layout_marginTop="432dp"
         android:layout_marginEnd="166dp"
+        android:layout_marginBottom="236dp"
         android:gravity="center"
         android:text="@string/upper_mins"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/display_timer_mins"
@@ -217,12 +217,12 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:contentDescription="@string/count_down_logo"
         android:layout_width="180dp"
         android:layout_height="83dp"
         android:layout_marginStart="215dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="324dp"
+        android:contentDescription="@string/count_down_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
