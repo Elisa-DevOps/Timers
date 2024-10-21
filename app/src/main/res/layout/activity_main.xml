@@ -106,6 +106,22 @@
         app:layout_constraintStart_toEndOf="@+id/display_mins"
         app:layout_constraintTop_toBottomOf="@+id/stopW_secs" />
 
+    <Button
+        android:id="@+id/stopW_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="254dp"
+        android:backgroundTint="@color/brightTeal"
+        android:text="Start"
+        android:textColor="@color/solidBlack"
+        android:textSize="25sp"
+        android:onClick="handleStopWatchStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display_hours" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="174dp"
