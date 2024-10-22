@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/stopW_hours"
-        android:layout_width="79dp"
-        android:layout_height="63dp"
+        android:layout_width="99dp"
+        android:layout_height="64dp"
         android:layout_marginStart="31dp"
         android:layout_marginTop="104dp"
         android:layout_marginEnd="56dp"
@@ -19,16 +19,16 @@
         android:text="@string/upper_hrs"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toStartOf="@+id/stopW_mins"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/display_hours"
-        android:layout_width="44dp"
-        android:layout_height="28dp"
+        android:layout_width="74dp"
+        android:layout_height="30dp"
         android:layout_marginStart="52dp"
         android:layout_marginEnd="87dp"
         android:gravity="center"
@@ -38,13 +38,14 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/display_mins"
+        app:layout_constraintHorizontal_bias="0.384"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stopW_hours" />
 
     <TextView
         android:id="@+id/stopW_mins"
-        android:layout_width="79dp"
-        android:layout_height="63dp"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
         android:layout_marginStart="166dp"
         android:layout_marginTop="104dp"
         android:layout_marginEnd="166dp"
@@ -52,17 +53,17 @@
         android:text="@string/upper_mins"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/display_mins"
-        android:layout_width="45dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginEnd="183dp"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginEnd="167dp"
         android:gravity="center"
         android:text="@string/lower_mins"
         android:textAlignment="center"
@@ -75,7 +76,7 @@
 
     <TextView
         android:id="@+id/stopW_secs"
-        android:layout_width="79dp"
+        android:layout_width="97dp"
         android:layout_height="63dp"
         android:layout_marginStart="54dp"
         android:layout_marginTop="104dp"
@@ -84,16 +85,16 @@
         android:text="@string/upper_secs"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toEndOf="@+id/stopW_mins"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/display_secs"
-        android:layout_width="39dp"
-        android:layout_height="30dp"
+        android:layout_width="79dp"
+        android:layout_height="29dp"
         android:layout_marginStart="92dp"
         android:layout_marginEnd="53dp"
         android:gravity="center"
@@ -103,6 +104,7 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
         app:layout_constraintStart_toEndOf="@+id/display_mins"
         app:layout_constraintTop_toBottomOf="@+id/stopW_secs" />
 
@@ -114,10 +116,10 @@
         android:layout_marginTop="38dp"
         android:layout_marginEnd="254dp"
         android:backgroundTint="@color/brightTeal"
-        android:text="Start"
+        android:onClick="handleStopWatchStart"
+        android:text="@string/start"
         android:textColor="@color/solidBlack"
         android:textSize="25sp"
-        android:onClick="handleStopWatchStart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/display_hours" />
@@ -137,24 +139,25 @@
 
     <TextView
         android:id="@+id/timer_hours"
-        android:layout_width="79dp"
-        android:layout_height="63dp"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="55dp"
-        android:layout_marginBottom="236dp"
+        android:layout_marginBottom="228dp"
         android:gravity="center"
         android:text="@string/upper_hrs"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/timer_mins"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/display_timer_hours"
-        android:layout_width="44dp"
-        android:layout_height="28dp"
+        android:layout_width="61dp"
+        android:layout_height="46dp"
         android:layout_marginStart="53dp"
         android:layout_marginEnd="87dp"
         android:gravity="center"
@@ -164,29 +167,30 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/display_timer_mins"
+        app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timer_hours" />
 
     <TextView
         android:id="@+id/timer_mins"
-        android:layout_width="79dp"
-        android:layout_height="63dp"
+        android:layout_width="105dp"
+        android:layout_height="71dp"
         android:layout_marginStart="166dp"
         android:layout_marginEnd="166dp"
-        android:layout_marginBottom="236dp"
+        android:layout_marginBottom="228dp"
         android:gravity="center"
         android:text="@string/upper_mins"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/display_timer_mins"
-        android:layout_width="45dp"
-        android:layout_height="30dp"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
         android:layout_marginStart="184dp"
         android:layout_marginEnd="182dp"
         android:gravity="center"
@@ -196,13 +200,14 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timer_mins" />
 
     <TextView
         android:id="@+id/timer_secs"
-        android:layout_width="79dp"
-        android:layout_height="63dp"
+        android:layout_width="103dp"
+        android:layout_height="71dp"
         android:layout_marginStart="59dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="28dp"
@@ -210,15 +215,15 @@
         android:text="@string/upper_secs"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/timer_mins"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
         android:id="@+id/display_timer_secs"
-        android:layout_width="39dp"
-        android:layout_height="30dp"
+        android:layout_width="55dp"
+        android:layout_height="43dp"
         android:layout_marginStart="91dp"
         android:layout_marginEnd="52dp"
         android:gravity="center"
@@ -228,6 +233,7 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/display_timer_mins"
         app:layout_constraintTop_toBottomOf="@+id/timer_secs" />
 

@@ -26,13 +26,22 @@ class MainActivity : AppCompatActivity() {
         val stopWatchSecs = findViewById<TextView>(R.id.stopW_secs)
 
         val stopWatchButton = findViewById<TextView>(R.id.stopW_start)
+        var elapsedHours = 0
 
         if (stopWatchButton.text == "Start") {
             stopWatchButton.text = "Stop"
             stopWatchButton.setBackgroundColor(getColor(R.color.red))
+            /*while (stopWatchHours.text != "Start") {
+                elapsedHours = 15
+            }*/
+            elapsedHours = 15
+            stopWatchHours.text = elapsedHours.toString()
         } else {
             stopWatchButton.text = "Start"
             stopWatchButton.setBackgroundColor(getColor(R.color.brightTeal))
+            elapsedHours += elapsedHours
         }
+
+        //stopWatchHours.text = (System.currentTimeMillis() - elapsedHours).toString()
     }
 }
