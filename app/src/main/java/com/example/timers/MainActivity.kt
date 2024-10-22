@@ -51,6 +51,10 @@ class MainActivity : AppCompatActivity() {
             elapsedSecs = (System.currentTimeMillis().toInt()) / 1000
             stopWatchSecs.text = elapsedSecs.toString()
 
+            while (isRunning) {
+                stopWatchButton.setOnClickListener {
+                    isRunning = false
+                }
 
                 var elapsed: Duration = RealtimeMonotonicTimeSource.measureTime {
                     Thread.sleep(1000)
@@ -58,19 +62,22 @@ class MainActivity : AppCompatActivity() {
                 stopWatchSecs.text = elapsed.inWholeSeconds.toString()
                 stopWatchMins.text = (elapsed / 60).inWholeMinutes.toString()
                 stopWatchHours.text = (elapsed / 3600).inWholeHours.toString()
-
-
-            /*while (stopWatchHours.text != "Start") {
-                elapsedHours = 15
-            }*/
-            //elapsedHours = 15
-            //stopWatchHours.text = elapsedHours.toString()
+            }
         } else {
             stopWatchButton.text = "Start"
             stopWatchButton.setBackgroundColor(getColor(R.color.brightTeal))
-            elapsedHours += elapsedHours
         }
 
         //stopWatchHours.text = (System.currentTimeMillis() - elapsedHours).toString()
+    }
+
+    fun handleStopWatchReset(view: View) {
+        val stopWatchHours = findViewById<TextView>(R.id.stopW_hours)
+        val stopWatchMins = findViewById<TextView>(R.id.stopW_mins)
+        val stopWatchSecs = findViewById<TextView>(R.id.stopW_secs)
+
+        stopWatchHours.text = "0"
+        stopWatchMins.text = "0"
+        stopWatchSecs.text = "0"
     }
 }

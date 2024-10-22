@@ -124,6 +124,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/display_hours" />
 
+    <Button
+        android:id="@+id/stopW_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/brightTeal"
+        android:onClick="handleStopWatchReset"
+        android:text="@string/reset"
+        android:textColor="@color/solidBlack"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="174dp"
